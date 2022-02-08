@@ -9,8 +9,8 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
     meta(http-equiv='X-UA-Compatible', content='ie=edge')
 
-    meta(name='msapplication-TileColor', content='#0E0E0E')
-    meta(name='theme-color', content='#0E0E0E')
+    meta(name='msapplication-TileColor', content='#242529')
+    meta(name='theme-color', content='#242529')
 
     //- SEO
 
@@ -40,12 +40,6 @@ html(lang='en')
     link(rel='icon', type='image/png', sizes='16x16', href=require('images/favicons/favicon-16x16.png'))
     link(rel='shortcut icon', href=require('images/favicons/favicon.ico'))
 
-    //- Preload fonts
-    link(type='font/woff', href=require('source/assets/fonts/Quicksand-Bold.woff'), rel='preload', as='font', crossorigin)
-    link(type='font/woff', href=require('source/assets/fonts/Quicksand-Medium.woff'), rel='preload', as='font', crossorigin)
-    link(type='font/woff', href=require('source/assets/fonts/Quicksand-Regular.woff'), rel='preload', as='font', crossorigin)
-    link(type='font/woff', href=require('source/assets/fonts/Quicksand-Light.woff'), rel='preload', as='font', crossorigin)
-
     //- Title
     block title
       title Your project!
@@ -68,11 +62,3 @@ html(lang='en')
 
     //- block scripts
     block scripts
-
-    // Global site tag (gtag.js) - Google Analytics
-    script(async='' src='https://www.googletagmanager.com/gtag/js?id=UA-56237358-2')
-    script.
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-56237358-2');

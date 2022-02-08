@@ -1,10 +1,8 @@
 /* src/app.js */
 
 // Styles
-import 'styles/_app.scss'
+import 'styles/_app.scss';
 
-$(function() {
-  console.log('Ready!')
+import 'bootstrap';
 
-  require('scripts/demo')
-})
+require('scripts/demo');

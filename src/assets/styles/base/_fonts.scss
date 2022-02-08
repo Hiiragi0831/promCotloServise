@@ -1,31 +1,43 @@
 /* src/assets/styles/base/_fonts.scss  */
 
-/*
-  Quicksand
-*/
-
 @font-face {
-  font-family: 'Quicksand';
-  font-weight: 700;
-  src: url('@~fonts/Quicksand-Bold.woff');
+  font-family: 'Ford Antenna';
+  src: url('@~fonts/FordAntenna-Semibold.eot'),
+  url('@~fonts/FordAntenna-Semibold.eot?#iefix') format('embedded-opentype'),
+  url('@~fonts/FordAntenna-Semibold.woff') format('woff'),
+  url('@~fonts/FordAntenna-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'Quicksand';
+  font-family: 'Ford Antenna';
+  src: url('@~fonts/FordAntenna-Bold.eot'),
+  url('@~fonts/FordAntenna-Bold.eot?#iefix') format('embedded-opentype'),
+  url('@~fonts/FordAntenna-Bold.woff') format('woff'),
+  url('@~fonts/FordAntenna-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ford Antenna';
+  src: url('@~fonts/FordAntenna-Medium.eot'),
+  url('@~fonts/FordAntenna-Medium.eot?#iefix') format('embedded-opentype'),
+  url('@~fonts/FordAntenna-Medium.woff') format('woff'),
+  url('@~fonts/FordAntenna-Medium.ttf') format('truetype');
   font-weight: 500;
-  src: url('@~fonts/Quicksand-Medium.woff');
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'Quicksand';
-  font-weight: 400;
-  src: url('@~fonts/Quicksand-Regular.woff');
+  font-family: 'Ford Antenna';
+  src: url('@~fonts/FordAntenna-Regular.eot'),
+  url('@~fonts/FordAntenna-Regular.eot?#iefix') format('embedded-opentype'),
+  url('@~fonts/FordAntenna-Regular.woff') format('woff'),
+  url('@~fonts/FordAntenna-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-@font-face {
-  font-family: 'Quicksand';
-  font-weight: 300;
-  src: url('@~fonts/Quicksand-Light.woff');
-}
-
-$quicksand: 'Quicksand', sans-serif;
+$fordAntenna: 'Ford Antenna', sans-serif;

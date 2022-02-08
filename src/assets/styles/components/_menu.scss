@@ -1,26 +1,49 @@
 /* src/assets/styles/components/_menu.scss  */
 
-.menu {
-  position: fixed;
-  top: 0;
-  color: white;
-  width: 100%;
-  padding: 15px;
+.nav-logo {
+  max-width: 317px;
+  min-width: 192px;
 }
-.menu__ul {
-  @include isFlex(center, flex-start);
-}
-.menu__item {
-  & + .menu__item {
-    margin-left: 20px;
+.navbar {
+  border: 2px solid #EBECF0;
+  background-color: white;
+  padding: 0;
+  z-index: 999;
+
+  .container-fluid {
+    padding-left: 55px;
+    padding-right: 0;
   }
 }
-.menu__link {
-  color: white;
-  border-bottom: 2px solid transparent;
-  font-size: 15px;
-  &:hover,
-  &.active {
-    border-color: white;
+.navbar-collapse {
+  .btn-primary {
+    padding: 48px 55px;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    .icon {
+      padding-left: 25px;
+    }
+  }
+}
+
+.navbar-nav {
+  .nav-item {
+    padding: 0 40px 0 40px;
+    .nav-link {
+      text-transform: uppercase;
+      color: $neutralBlack;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      padding: 0;
+      border-bottom: 4px solid transparent;
+
+      &.active, &:hover {
+        color: $neutralBlack;
+        border-bottom: 4px solid $red;
+      }
+    }
   }
 }

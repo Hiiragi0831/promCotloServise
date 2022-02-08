@@ -1,13 +1,14 @@
-mixin menu(currentPage)
-  nav.menu
-    ul.menu__ul.ml-auto
-      li.menu__item
-        img(src=require('images/image.png'), alt="", title="", class="image")
-      li.menu__item
-        a.menu__link(href='/', class=currentPage === 'home' ? 'active' : '') Home
-      li.menu__item
-        a.menu__link(href='/contact', class=currentPage === 'contact' ? 'active' : '') Contact
-      li.menu__item
-        a.menu__link(href='/blog', class=currentPage === 'blog' ? 'active' : '') Blog
-      li.menu__item
-        a.menu__link(href='/blog/example-post', class=currentPage === 'blog-post' ? 'active' : '') Blog Post
+nav.navbar.navbar-expand-lg.navbar-light.fixed-top
+  .container-fluid
+    a.navbar-brand(href='#')
+      img(src=require('images/logo.svg') class="nav-logo")
+    button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarNav.collapse.navbar-collapse
+      ul.navbar-nav.ms-auto
+        li.nav-item
+          a.nav-link(href='#') О компании
+        li.nav-item
+          a.nav-link.active(href='#') Услуги
+      a.btn.btn-primary Cвязаться
+        img(src=require('images/message.svg') class="icon")

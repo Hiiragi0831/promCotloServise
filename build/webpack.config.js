@@ -171,8 +171,8 @@ module.exports = (env) => {
       }),
 
       // Other pages
-      ...utils.pages(MODE), // mode
-      ...utils.pages(MODE, 'blog'), // mode, folder name under pages
+      // ...utils.pages(MODE), // mode
+      // ...utils.pages(MODE, 'blog'), // mode, folder name under pages
 
       new webpack.ProvidePlugin({
         $: 'jquery',
