@@ -57,7 +57,7 @@ block content
                     .right-slider-text
                       img(src=require('images/s01.png'))
                       h3 Эксплуатационные испытания котельных агрегатов
-                      a(href='#') Подробнее
+                      a(href='#' data-bs-toggle="modal" data-bs-target="#exampleModal") Подробнее
                   .swiper-slide
                     img(src=require('images/001.jpg')).slide-bg-img
                     .right-slider-text
@@ -117,3 +117,24 @@ block content
                   | Создание сайта —
                   br
                   |веб-студия «Облако»
+
+  #exampleModal.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+    .modal-dialog.modal-lg.modal-dialog-centered
+      .modal-content
+        .modal-body
+          button.modal-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+            svg(width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg')
+              path(d='M5 5L19 19' stroke='white' stroke-width='3')
+              path(d='M19 5L5 19' stroke='white' stroke-width='3')
+          img(src=require('images/s-bg-01.jpg')).w-100
+          h3 Эксплуатационные испытания котельных агрегатов
+          p
+            |— приемочные испытания котла для проверки расчетных параметров и составления характеристик котла;
+            br
+            |— балансовые испытания для нахождения дефектов оборудования и изыскания способов их устранения;
+            br
+            |— балансовые испытания для наладки и выявления наивыгоднейшего режима работы котлоагрегата;
+            br
+            |— сравнительные эксплуатационные испытания для выявления результатов проведенных рационализаторских мероприятий;
+            br
+            |— испытания отдельных элементов оборудования.

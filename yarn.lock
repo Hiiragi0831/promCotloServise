@@ -958,7 +958,7 @@
 
 "@popperjs/core@^2.11.2":
   version "2.11.2"
-  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.2.tgz#830beaec4b4091a9e9398ac50f865ddea52186b9"
+  resolved "https://registry.npmjs.org/@popperjs/core/-/core-2.11.2.tgz"
   integrity sha512-92FRmppjjqz29VMJ2dn+xdyXZBrMlE42AV6Kq6BwjWV7CNUW1hs2FtxSNLQE+gJhaZ6AAmYuO9y8dshhcBl7vA==
 
 "@trysound/sax@0.1.1":
@@ -1276,6 +1276,11 @@ alphanum-sort@^1.0.2:
 amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.npmjs.org/amdefine/-/amdefine-1.0.1.tgz"
+
+animate.css@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/animate.css/-/animate.css-4.1.1.tgz#614ec5a81131d7e4dc362a58143f7406abd68075"
+  integrity sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ==
 
 ansi-colors@^3.0.0:
   version "3.2.3"
@@ -2918,7 +2923,7 @@ dom-serializer@^1.0.1:
 
 dom7@^4.0.4:
   version "4.0.4"
-  resolved "https://registry.yarnpkg.com/dom7/-/dom7-4.0.4.tgz#8b68c5d8e5e2ed0fddb1cb93e433bc9060c8f3fb"
+  resolved "https://registry.npmjs.org/dom7/-/dom7-4.0.4.tgz"
   integrity sha512-DSSgBzQ4rJWQp1u6o+3FVwMNnT5bzQbMb+o31TjYYeRi05uAcpF8koxdfzeoe5ElzPmua7W7N28YJhF7iEKqIw==
   dependencies:
     ssr-window "^4.0.0"
@@ -7451,7 +7456,7 @@ sshpk@^1.7.0:
 
 ssr-window@^4.0.0, ssr-window@^4.0.2:
   version "4.0.2"
-  resolved "https://registry.yarnpkg.com/ssr-window/-/ssr-window-4.0.2.tgz#dc6b3ee37be86ac0e3ddc60030f7b3bc9b8553be"
+  resolved "https://registry.npmjs.org/ssr-window/-/ssr-window-4.0.2.tgz"
   integrity sha512-ISv/Ch+ig7SOtw7G2+qkwfVASzazUnvlDTwypdLoPoySv+6MqlOV10VwPSE6EWkGjhW50lUmghPmpYZXMu/+AQ==
 
 stable@^0.1.8:
@@ -7635,9 +7640,9 @@ svgo@^2.3.0:
     stable "^0.1.8"
 
 swiper@^8.0.3:
-  version "8.0.3"
-  resolved "https://registry.yarnpkg.com/swiper/-/swiper-8.0.3.tgz#7933a76e9720af0b7283f555d5b20dc566c74987"
-  integrity sha512-mpw7v/Lkh48LQUxtJuFD+3Lls8LViNi3j1fbk45fNo9DXZxXK/e7NMixxS27OxvC5wx+5H3bet1O2pdjk7akBA==
+  version "8.0.5"
+  resolved "https://registry.npmjs.org/swiper/-/swiper-8.0.5.tgz"
+  integrity sha512-g2YQY9uzhvPPWw/UhH/q8PHOx+cakZrfwwAHyxj1EV6ovlVc3Wy321da9/c71UIP/shBtYOLfzP5L3At567h5w==
   dependencies:
     dom7 "^4.0.4"
     ssr-window "^4.0.2"
@@ -8232,6 +8237,11 @@ word-wrap@^1.2.3:
   version "1.2.3"
   resolved "https://registry.npmjs.org/word-wrap/-/word-wrap-1.2.3.tgz"
   integrity sha512-Hz/mrNwitNRh/HUAtM/VT/5VH+ygD6DV7mYKZAtHOrbs8U7lvPS6xf7EJKMF0uW1KJCl0H701g3ZGus+muE5vQ==
+
+wow.js@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.npmjs.org/wow.js/-/wow.js-1.2.2.tgz"
+  integrity sha1-JHUZsKNCMZsaY+Iq6prOwanqV/U=
 
 wrap-ansi@^5.1.0:
   version "5.1.0"

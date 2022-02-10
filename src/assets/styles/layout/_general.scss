@@ -9,7 +9,7 @@
 
 body {
   font-family: $fordAntenna;
-  background: $darkslategray;
+  background: white;
   color: white;
   min-height: 100vh;
 }
@@ -38,4 +38,9 @@ section {
 }
 .bg-grey {
   background-color: $grey;
+}
+
+.pos-sticky {
+  position: sticky;
+  bottom: 0;
 }
