@@ -4,10 +4,12 @@
 import 'styles/_app.scss';
 import 'bootstrap';
 import Swiper, { Navigation, Pagination } from 'swiper';
+import SmoothScroll from 'smooth-scroll';
 
 function addZero(num){
   return (num > 9) ? num : '0' + num;
 }
+
 document.addEventListener("DOMContentLoaded", function() {
   new Swiper(".right-slider", {
     modules: [Navigation, Pagination],
@@ -50,19 +52,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
-  const anchors = document.querySelectorAll('a[href*="#"]')
-
-  for (let anchor of anchors) {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault()
-
-      const blockID = anchor.getAttribute('href').substr(1)
-
-      document.getElementById(blockID).scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      })
-    })
-  }
-
+  new SmoothScroll('a[href*="#"]', {
+    speed: 200,
+    easing: 'Linear',
+    speedAsDuration: true
+  });
 });
