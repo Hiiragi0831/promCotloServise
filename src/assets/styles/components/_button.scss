@@ -2,11 +2,12 @@
 
 .btn-primary {
   background-color: $red;
-  border: none;
+  border: none!important;
   border-radius: 0;
-  outline: none;
+  outline: none!important;
+  box-shadow: none!important;
 
-  &:hover {
+  &:hover, &:focus {
     background-color: $red-light;
   }
 }
