@@ -8,7 +8,7 @@ block manifestBrowserconfigFiles
   meta(name='msapplication-config' content='../browserconfig.xml')
 
 block content
-  .wrapper(style='background-image:url(' + require('images/main-slide.jpg') +');')
+  .wrapper
     .space#main
     .block
       section.left
@@ -102,12 +102,15 @@ block content
                 p 308510, Белгородская обл, Белгородский р-н, пгт Разумное, ул Васнецова, д. 25
               .right-contact-item
                 p.b Email:
-                p info@bel-pks.ru
+                p
+                  a(href="mailto:info@bel-pks.ru") info@bel-pks.ru
               .right-contact-item
                 p.b Телефон:
                 p
-                  span +7 4722 41 99 23
-                  span +7 919 289 93 42
+                  a(href="tel:+74722419923")
+                    span +7 4722 41 99 23
+                  a(href="tel:+79192899342")
+                    span +7 919 289 93 42
               .right-contact-item
                 p.b Реквизиты:
                 p
@@ -116,7 +119,7 @@ block content
             .col-12.right-head#footer
               .footer
                 .text © ООО «ПромКотлоСервис», 2022
-                .text-studio
+                a.text-studio(href="#")
                   | Создание сайта —
                   br
                   |веб-студия «Облако»

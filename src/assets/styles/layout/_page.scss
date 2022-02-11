@@ -260,9 +260,15 @@
       font-size: 16px;
       line-height: 160%;
       margin-bottom: 10px;
+      color: $neutralBlack;
 
       &:last-child {
         margin-bottom: 0;
+      }
+
+      a {
+        color: $neutralBlack;
+        text-decoration: none;
       }
 
       span {
@@ -299,6 +305,7 @@
     font-size: 16px;
     line-height: 160%;
     color: $neutralBlack;
+    text-decoration: none;
   }
 }
 
@@ -406,6 +413,10 @@
   .right {
     width: 100%;
   }
+
+  .right-mouse {
+    display: none;
+  }
 }
 
 @include media-breakpoint-down(lg) {
@@ -424,7 +435,6 @@
   .navbar-collapse .btn-primary .icon {
     padding-left: 0;
   }
-
 }
 
 @include media-breakpoint-down(md) {
