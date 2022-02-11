@@ -9,34 +9,37 @@ block manifestBrowserconfigFiles
 
 block content
   .wrapper(style='background-image:url(' + require('images/main-slide.jpg') +');')
-    .space
+    .space#main
     .block
       section.left
         .container-fluid
           .row
-            .col-12.left-col
-              h1 Проектирование, строительство и Наладка промышленных котельных
-              .left-span на биотопливе
-              .left-icons
-                .left-icon-block
-                  img.left-icon(src=require('images/trash.svg'))
-                  .left-icon-text ТБО
-                .left-icon-block
-                  img.left-icon(src=require('images/wood.svg'))
-                  .left-icon-text древесина
-                .left-icon-block
-                  img.left-icon(src=require('images/torf.svg'))
-                  .left-icon-text торф
-                .left-icon-block
-                  img.left-icon(src=require('images/bedding.svg'))
-                  .left-icon-text подстилка
-                .left-icon-block
-                  img.left-icon(src=require('images/agriculture.svg'))
-                  .left-icon-text агрокультуры
+            .col-12.left-col.position-relative
+              .full
+                h1 Проектирование, строительство и Наладка промышленных котельных
+                .left-span на биотопливе
+                .left-icons
+                  .left-icon-block
+                    img.left-icon(src=require('images/trash.svg'))
+                    .left-icon-text ТБО
+                  .left-icon-block
+                    img.left-icon(src=require('images/wood.svg'))
+                    .left-icon-text древесина
+                  .left-icon-block
+                    img.left-icon(src=require('images/torf.svg'))
+                    .left-icon-text торф
+                  .left-icon-block
+                    img.left-icon(src=require('images/bedding.svg'))
+                    .left-icon-text подстилка
+                  .left-icon-block
+                    img.left-icon(src=require('images/agriculture.svg'))
+                    .left-icon-text агрокультуры
+              .half
+                h1 Проектирование, строительство и Наладка промышленных котельных на биотопливе
       section.right
         .container-fluid
           .row
-            .col-12.right-head#about
+            .col-12.right-head#about(name="about")
               .right-title
                 h2 О компании
               a.right-mouse(href="#about")
@@ -46,7 +49,7 @@ block content
               h3 ООО «ПРОМКОТЛОСЕРВИС»
               p Знакомство с котельными, работающими на биотопливе, началось с 2016 года. Спустя 5 лет, после участия в строительстве пяти объектов со слоевым сжиганием топлива, наладки и доводки четырех котельных установок с камерным сжиганием лузги подсолнечника был основан ПРОМКОТЛОСЕРВИС — организация, специализирующаяся на монтаже и наладке промышленных котельных установок, использующих в качестве топлива БИОМАССУ — отходы лесопереработки (щепа, кора, порубочные остатки), целлюлозно-бумажного производства, сахарного производства, агропромышленного комплекса (подстилка после содержания животных и птиц, солома, лузга, шелуха, жмых и многие другие сельскохозяйственные отходы), ТБО.
               img(src=require('images/001.jpg')).w-100
-            .col-12.right-head
+            .col-12.right-head#service(name="service")
               .right-title
                 h2 Услуги
             .col-12.p-0
@@ -59,28 +62,28 @@ block content
                       h3 Эксплуатационные испытания котельных агрегатов
                       a(href='#' data-bs-toggle="modal" data-bs-target="#exampleModal") Подробнее
                   .swiper-slide
-                    img(src=require('images/001.jpg')).slide-bg-img
+                    img(src=require('images/s-bg-02.jpg')).slide-bg-img
                     .right-slider-text
-                      img(src=require('images/s01.png'))
-                      h3 Эксплуатационные испытания котельных агрегатов
+                      img(src=require('images/s02.png'))
+                      h3 Пусконаладочные работы
                       a(href='#') Подробнее
                   .swiper-slide
-                    img(src=require('images/001.jpg')).slide-bg-img
+                    img(src=require('images/s-bg-03.jpg')).slide-bg-img
                     .right-slider-text
-                      img(src=require('images/s01.png'))
-                      h3 Эксплуатационные испытания котельных агрегатов
+                      img(src=require('images/s03.png'))
+                      h3 Инженерно-техническое сопровождение ремонтных работ
                       a(href='#') Подробнее
                   .swiper-slide
-                    img(src=require('images/001.jpg')).slide-bg-img
+                    img(src=require('images/s-bg-04.jpg')).slide-bg-img
                     .right-slider-text
-                      img(src=require('images/s01.png'))
-                      h3 Эксплуатационные испытания котельных агрегатов
+                      img(src=require('images/s04.png'))
+                      h3 Инженерно-техническое сопровождение монтажных работ
                       a(href='#') Подробнее
                   .swiper-slide
-                    img(src=require('images/001.jpg')).slide-bg-img
+                    img(src=require('images/s-bg-05.jpg')).slide-bg-img
                     .right-slider-text
-                      img(src=require('images/s01.png'))
-                      h3 Эксплуатационные испытания котельных агрегатов
+                      img(src=require('images/s05.png'))
+                      h3 Инженерно-техническое сопровождение проектных работ
                       a(href='#') Подробнее
               .slider-footer
                 .slider-button-prev
@@ -90,7 +93,7 @@ block content
                   svg(width='22' height='16' viewBox='0 0 22 16' fill='none' xmlns='http://www.w3.org/2000/svg')
                     path(d='M1 9H0L0 7H1L1 9ZM21.7071 7.29289C22.0976 7.68342 22.0976 8.31658 21.7071 8.70711L15.3431 15.0711C14.9526 15.4616 14.3195 15.4616 13.9289 15.0711C13.5384 14.6805 13.5384 14.0474 13.9289 13.6569L19.5858 8L13.9289 2.34315C13.5384 1.95262 13.5384 1.31946 13.9289 0.928932C14.3195 0.538408 14.9526 0.538408 15.3431 0.928932L21.7071 7.29289ZM1 7L21 7V9L1 9L1 7Z')
                 .slider-pagination
-            .col-12.right-head
+            .col-12.right-head#contact
               .right-title
                 h2 Контакты
             .col-12.p-0
@@ -110,7 +113,7 @@ block content
                 p
                   span ИНН 3123477864
                   span ОГРН 1213100002972
-            .col-12.right-head
+            .col-12.right-head#footer
               .footer
                 .text © ООО «ПромКотлоСервис», 2022
                 .text-studio
