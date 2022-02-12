@@ -518,15 +518,14 @@
   }
 
   .half {
-    visibility: visible;
-    opacity: 1;
     padding-right: 0;
   }
 
-  .full {
-    visibility: hidden;
-    opacity: 0;
-  }
+  //
+  //.full {
+  //  visibility: hidden;
+  //  opacity: 0;
+  //}
 }
 
 @include media-breakpoint-down(sm) {
@@ -547,5 +546,16 @@
         width: 50%;
       }
     }
+  }
+}
+
+@media (min-width: 844px) and (max-width: 896px) {
+
+  .left {
+    margin-top: 50px;
+  }
+
+  .left h1 {
+    font-size: 32px;
   }
 }
